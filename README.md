@@ -6,6 +6,14 @@
 
 PyTorch implement of <a href="https://arxiv.org/abs/1907.08610" target="_blank">Lookahead Optimizer: k steps forward, 1 step back</a>
 
+---
+
+**PLEASE NOTE:** 
+This repository contains just the unedited `lookahead.py` file from the [original repository](https://github.com/alphadl/lookahead.pytorch), an empty `__init__.py` file to make it importable and no documentation whatsoever. 
+For more information about *Lookahead Optimizer: k steps forward, 1 step back*, please refer to the [original repository](https://github.com/alphadl/lookahead.pytorch) or the [original paper](https://arxiv.org/abs/1907.08610).
+
+---
+
 Usage:
 ```
 base_opt = torch.optim.Adam(model.parameters(), lr=1e-3, betas=(0.9, 0.999)) # Any optimizer
@@ -29,6 +37,3 @@ lookahead.step()
 ```
 
 中文介绍：https://mp.weixin.qq.com/s/3J-28xd0pyToSy8zzKs1RA  
-  
-  
-![avatar](fig/algorithm.png)
